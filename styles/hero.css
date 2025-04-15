@@ -38,11 +38,32 @@
     animation: slideUp 1s ease-in-out 0.3s both;
 }
 
-.hero-text_div header {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
     padding: 1.25rem 12.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: 0.5s;
+    backdrop-filter: blur(0px);
+
+}
+
+.header.scrolled {
+    transition: 0.5s;
+    background-color: rgba(59, 56, 56, 0);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 99999;
+
+    nav {
+            transform: translateX(0%);
+    }
 }
 
 @keyframes slideUp {
@@ -220,15 +241,17 @@ nav a:hover {
 }
 
 .hero-img {
+    position: relative;
     min-height: 100%;
     flex: 4;
+    z-index: 1000;
     background-image: url(../imgs/01.jpg);
     background-size: cover;
     animation: fadeIn 1s ease-in-out 0.5s both;
 }
 
 @media (max-width: 1500px) {
-    .hero-text_div header {
+    .header {
         padding: 1.25rem 7.5rem;
     }
 
@@ -247,9 +270,13 @@ nav a:hover {
 
 @media (max-width: 1000px) {
 
-    .hero-text_div header,
+    .hero-text_div .header,
     .hero-text {
         padding: 1.25rem 3.5rem;
+    }
+
+    .header{
+        width: 100% !important;
     }
 
     .hero-text {
@@ -309,7 +336,7 @@ nav a:hover {
 
 @media (max-width: 620px) {
 
-    .hero-text_div header,
+    .hero-text_div .header,
     .hero-text {
         padding: 4.25rem 1.5rem;
 
@@ -349,7 +376,7 @@ nav a:hover {
         width: 100%;
     }
 
-        .hero-image-under-title {
-            display: none;
-        }
+    .hero-image-under-title {
+        display: none;
+    }
 }
