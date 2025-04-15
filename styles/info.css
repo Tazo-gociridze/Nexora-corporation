@@ -1,0 +1,127 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-container {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info-parent {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .info-div-1 {
+        background-image: url(../imgs/03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 1s ease-in-out 0.2s both;
+    }
+
+    .info-div-2 {
+        background-color: var(--grey);
+        z-index: 0;
+        padding: 5px 45px;
+        background-size: cover;
+        background-position: center;
+        animation: slideUp 1s ease-in-out 0.4s both;
+
+        div {
+            padding: 20px 30px 20px 0px;
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+            display: flex;
+            gap: 20px;
+            animation: fadeIn 0.8s ease-in-out 0.6s both;
+
+            span {
+                flex: 0 0 90%;
+            }
+        }
+
+        div:nth-child(4) {
+            border-bottom: none !important;
+        }
+
+        button {
+            cursor: pointer;
+            margin-top: 30px;
+            width: 100%;
+            padding: 20px 0px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--grey);
+        }
+    }
+
+    .info-div-3 {
+        background-image: url(../imgs/02.webp);
+        background-position: right !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: fadeIn 1s ease-in-out 0.6s both;
+    }
+}
+
+.info-icon {
+    flex: 0 0 4rem !important;
+    z-index: 9999;
+    height: 3rem;
+    background-image: url(../imgs/Group\ 3553.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 1250px) {
+    .info-parent {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+
+        .info-div-3 {
+            background-position: center !important;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .info-parent {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        grid-template-columns: 0fr 3fr 0fr;
+
+        .info-div-2 {
+            font-size: 1.5rem;
+        }
+    }
+}

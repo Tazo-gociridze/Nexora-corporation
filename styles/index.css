@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Prata&display=swap');
+@import url("./hero.css");
+@import url('./info.css');
+@import url('./form.css');
+@import url('./footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--grey);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+:root {
+    /* Colors */
+    --grey-bold: #222222;
+    --grey: #282829;
+    --white: #FFFFFF;
+    --light-beige: #D5C9BE;
+    --light-apricot: #EFCFAD;
+    --slate-gray: #55565A;
+    --khaki-gray: #A4907D;
+    --dark-cyan: #38535D;
+    --light-gray: #D6D6D6;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arima {
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@media (max-width: 1770px) {
+    html {
+        font-size: 15.3px;
+    }
+}
+
+@media (max-width: 1620px) {
+    html {
+        font-size: 14.6px;
+    }
+}
+
+@media (max-width: 1470px) {
+    html {
+        font-size: 13.9px;
+    }
+}
+
+@media (max-width: 1320px) {
+    html {
+        font-size: 13.2px;
+    }
+}
+
+@media (max-width: 1170px) {
+    html {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 1020px) {
+    html {
+        font-size: 11.8px;
+    }
+}
+
+@media (max-width: 870px) {
+    html {
+        font-size: 11.1px;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 9.4px;
+    }
+}
+
+@media (max-width: 570px) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 7px;
+    }
+}

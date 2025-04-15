@@ -1,0 +1,141 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-bold);
+}
+
+.footer-head {
+    width: 100%;
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.475);
+    border-top: 1px solid rgba(255, 255, 255, 0.475);
+
+    nav {
+        font-size: 20px;
+        height: 24px;
+    }
+}
+
+.footer-foot {
+    display: flex;
+    flex: 0 0 75%;
+    padding: 0px 10rem;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-social-media {
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-top: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    gap: 20px;
+    margin-bottom: 47px;
+
+    ion-icon {
+        color: white;
+    }
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        cursor: pointer;
+        font-weight: 400;
+        margin-bottom: 30px;
+        padding: 15px 40px;
+        font-size: 1em;
+    }
+
+    span {
+        text-align: end;
+    }
+
+}
+
+
+@media (max-width: 790px) {
+    .footer-head {
+        nav {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer-foot {
+        padding: 0px 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        position: relative;
+        width: 100%;
+        height: 730px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grey-bold);
+    }
+
+    .footer-foot {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo{
+        div{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+    }
+
+    .footer-social-media {
+        span {
+            font-size: 2rem;
+        }
+    }
+
+    .footer-icons {
+        font-size: 2.7rem;
+
+        span {
+            font-size: 2rem;
+        }
+    }
+
+    .footer-btn {
+        button {
+            font-size: 2em;
+        }
+
+        span {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+    }
+}
