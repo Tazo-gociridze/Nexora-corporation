@@ -45,7 +45,7 @@ function draw() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
+    ctx.fillStyle = "rgba(253, 253, 253, 0.1)";
     ctx.fill();
 
     for (let j = i + 1; j < points.length; j++) {
