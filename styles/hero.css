@@ -284,6 +284,7 @@ nav a:hover {
 
     .hero-text {
         padding-top: 9.25rem;
+        margin-top: 0px;
         display: flex;
         align-items: start;
         justify-content: space-between;
